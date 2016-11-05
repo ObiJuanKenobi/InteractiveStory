@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.junio.interactivestory.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main_title"
+        android:id="@+id/titleImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:contentDescription="Signals From Mars"/>
+
+    <Button
+        android:text="Start Your Adventure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Start_Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_above="@+id/Start_Button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/nameEditText"
+        android:hint="Enter name to begin"
+        android:maxLength="30"/>
+</RelativeLayout>
